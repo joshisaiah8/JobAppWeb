@@ -1,0 +1,1157 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: calc(0.7vh + 0.7vw);
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+}
+
+
+  
+
+
+
+
+/* Background */
+.banner {
+    width: 100%;
+    height: 100%;
+    background: url(../styles/images/BannerBkg.png)no-repeat center center fixed;
+    background-size:cover;
+    background-attachment:fixed;
+    
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+
+.TopBar {
+    margin-bottom: 5em;
+}
+/* Nav Bar */
+.logo {
+    width:12vw;
+    position: absolute;
+
+
+    margin-left: 2vw;
+    margin-top:-5vh;
+
+    background-color:black;
+    border-radius: 0% 0% 20% 20%;
+
+
+}
+
+.logo:hover{
+    cursor:pointer;
+}
+
+.navbar{
+    height: 10vh;
+    width:100%;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(39, 39, 39, 0.61);
+    backdrop-filter: blur(5px);
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2.5vw;
+}
+
+nav {
+    padding-right:3%
+}
+
+.Links li a{
+    transition: 0.3s ease-in 0s;
+
+    color:white;
+    font-weight: 150;
+    text-decoration: none;
+    font-size: calc(0.8vh + 0.8vw);
+}
+
+.index a:hover {
+    color:#0088a9;
+}
+.about a:hover {
+    color: #0088a9;
+}
+.jobs a:hover {
+    color: #0088a9;
+}
+.apply a:hover {
+    color: #0088a9;
+}
+.enhancements a:hover {
+    color: #0088a9;
+}
+.email a:hover {
+    color: #0088a9;
+}
+.login a:hover{
+    color: #0088a9;
+    }
+
+.current{
+    padding: 1vh 1.7vw;
+    background-color: #0088a9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.current:hover{
+    transition: 0.3s ease-in 0s;
+    background-color: #005266;
+}
+
+
+
+/* Center Text */
+.EntryText{
+    height: 60%;
+    float: left;
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    padding-left: 15%;
+    margin-left:5%;
+    margin-bottom: 10em;
+    animation: fadeAnimation ease 1.5s;
+    animation-iteration-count: 1;
+}
+
+
+.LP{
+    color: white;
+    font-size:500%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text1 {
+    color: #fff;
+    font-size: 110%;
+    line-height: 2.5vh;
+    text-align: left;
+    margin-top: 2vh;
+    width: 40%;
+
+    border-left-style: solid;   
+    padding-left: 1%;
+}
+
+.EntryText form {
+    display: inline;
+}
+
+
+.button1 {
+    background: #0088a9;
+    border: 1px solid #0088a9;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 105%;
+    font-weight: 600;
+    line-height: 1vw;
+    
+    padding: 2.5vh 2vw;
+    text-align: center;
+
+    margin: 2vw 0vw 0vw 0vw;
+  }
+
+.button2 {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+
+    display:inline;
+      
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: 600;
+    line-height: 1vw;
+      
+    padding: 2.5vh 2vw;
+    text-align: center;
+    
+    margin: 1vw;
+  
+    background-color: initial;
+    background-position: 0 0;
+    color: white;
+  }
+
+  .button3 {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    display:inline;
+      
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: 600;
+    line-height: 1vw;
+      
+    padding: 2.5vh 2vw;
+    text-align: center;
+    
+    margin: 1vw;
+  
+    background-color: initial;
+    background-position: 0 0;
+    color: white;
+  }
+  
+.button1:hover,
+.button1:active {
+    transition: 0.3s ease-in 0s;
+    background-color: initial;
+    background-position: 0 0;
+    color: #0088a9;
+  }
+  
+.button2:hover,
+.button2:active {
+      transition: 0.2s ease-in 0s;
+      background-color: initial;
+      background-position: 0 0;
+      color: rgb(0, 0, 0);
+      background-color:white;
+  }
+
+.button3:hover,
+.button3:active {
+      transition: 0.2s ease-in 0s;
+      background-color: initial;
+      background-position: 0 0;
+      color: rgb(0, 0, 0);
+      background-color:white;
+  }
+  
+.button1:active,
+.button2:active,
+.button3:active,
+.reset:active,
+.submit:active {
+    opacity: .5;
+  }
+
+
+    
+  
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+footer{
+    background: rgb(0,0,0);
+    color:white;
+    padding: 3vw
+}
+
+
+.footlinks{
+
+  padding-right: 5vw;
+  padding-left:5vw;
+
+  display: flex;   
+  justify-content: space-between;
+
+
+}
+
+.footlinks img {
+
+    width:5vw;
+    height:5vw;
+
+    border-radius: 100% 100% 100% 100%;
+
+    text-align:center;
+}
+
+.footlinks p {
+    line-height: 120%;
+    color: gray;
+
+}
+
+.footlinks div {
+    width: 10vw;
+    height: 20vh;
+    text-align: center;
+}
+
+.footlinks div em {
+    line-height: 3.5vh;
+}
+
+
+
+
+.EnhancePage {
+    background: url(../styles/images/DataBaseBck.jpg)no-repeat center center fixed;
+    background-size:cover;
+    
+    font-size: calc(0.6vh + 0.6vw);
+    color: white;
+}
+
+
+
+.EnhanceTitle h1 {
+    clear: both;
+    
+    position: relative;
+    font-size: 3.5em;
+    color: white;
+    text-align: center;
+
+    animation-name: fadeAnimation;
+    animation-duration: 1.5s;
+}
+.EnhanceTitle button {
+    margin-left: 42vw;
+    width:15%;
+    font-size:2em;
+}
+
+.EnhancePage h1 {
+    margin-top: 10vh;
+    margin-left:20vw;
+    margin-right:25vw;
+    width:50vw;
+
+    padding: 5%;
+  
+    background-color: rgba(0, 0, 0, 0.9);
+  
+    border-radius:15% 15% 15% 15%
+}
+
+
+
+.EnhanceOne {
+    float: left;
+    margin-top: 30em;
+    margin-left: 8em;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    padding-inline: 1em;
+    border-radius: 14px;
+    text-align: center;
+    word-spacing: 0.1em;
+}
+
+.EnhanceTwo {
+    float: right;
+    clear: both;
+    margin-top: 10em;
+    margin-right: 8em;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    padding-inline: 1em;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.EnhanceThree {
+    float: left;
+    clear: both;
+    margin-top: 10em;
+    
+    margin-left: 8em;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    padding-inline: 1em;
+    border-radius: 14px;
+    text-align: center;
+}
+
+
+
+.EnhanceThree h3 {
+    clear: both;
+    margin-top: 2em;
+    
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+.EnhanceThree figcaption{
+    clear: both;
+    
+    position: relative;
+    text-align: center;
+}
+
+.EnhanceThree p {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.EnhanceThree button:hover {
+    cursor:pointer;
+}
+
+
+
+.EnhanceOne h3 {
+    clear: both;
+    margin-top: 2em;
+    
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+.EnhanceOne figcaption{
+    clear: both;
+    
+    position: relative;
+    text-align: center;
+}
+
+.EnhanceOne p {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.EnhanceTwo h3 {
+    clear: both;
+    margin-top: 2em;
+    
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+.EnhanceTwo figcaption {
+    clear: both;
+    
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.EnhanceTwo p {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+#applyBackground {
+    width: 37.8em;
+    height: 18em;
+}
+
+#Important {
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(160, 131, 77);
+}
+
+
+
+/*================================ABOUT================================*/
+/* UNIVERSAL */
+.AboutPage{
+    background: url(../styles/images/DataBaseBck.jpg)no-repeat center center fixed;
+    background-size:cover;
+    background-attachment:fixed;
+    
+    font-size: calc(0.6vh + 0.6vw);
+}
+
+.AboutPage header{
+    margin-bottom: 50em;
+   
+}
+
+
+
+table{border: 1px solid white;}
+table th, table td {border: 1px solid white;}
+
+/*CLASSES*/
+.InfoContainer {
+    margin-left:1vw;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    width: 50%;
+    border-radius: 14px;
+    padding: 3em;
+    margin-top:4vh;
+    margin-bottom: 4em;
+    margin-left: 22vw;
+
+    
+}
+
+#manageMain {
+    margin-top: 4em;
+    
+}
+
+.InfoContainer figure h2 {
+    color: white;
+}
+
+.EnhanceButton {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: 600;
+    line-height: 1vw;
+      
+    padding: 2.5vh 2vw;
+    text-align: center;
+    
+    margin: 1vw;
+  
+    background-color: rgba(0, 0, 0, 0.8);
+    background-position: 0 0;
+    color: white;
+    
+}
+
+.EnhanceButton:hover,
+.EnhanceButton:active {
+    transition: 0.2s ease-in 0s;
+
+    background-position: 0 0;
+    color: rgb(0, 0, 0);
+
+    background-color:white;
+}  
+
+.InfoContainer p{
+    margin-top: 8em;
+    color: white;
+}
+
+.InfoContainer dl {
+    color: white;
+    line-height:3vh;
+    
+}
+
+dt {
+    float:left;
+}
+dd {
+
+    margin-left:20vw;
+}
+
+.GroupList {
+    text-align: center;
+    color:white;
+}
+.GroupDesc{
+    color:white;
+    text-align:center;
+}
+
+
+.top{
+
+    text-align: center;
+    color: snow;
+    clear: both;
+    width: auto;
+    
+    animation: fadeAnimation ease 1.5s;
+
+
+    margin-top:10vh;
+    margin-bottom:10vh;
+    margin-left:25vw;
+    margin-right:25vw;
+    width:50vw;
+  
+    background-color: rgba(0, 0, 0, 0.9);
+  
+    border-radius:15% 15% 15% 15%
+}
+.GroupPhoto img{
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    float: right;
+    width: 15vw;
+    margin-top:-14vh;
+}
+
+.InfoContainer h2 {
+    text-align:center;
+}
+
+
+#Timetable {
+    margin: 0 auto;
+    color:white;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+#TableCapt {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+
+#Timetable thead th,  
+#Timetable tbody th, 
+#Timetable tfoot th {
+    background-color: black;
+    
+}
+#Timetable td {
+    background-color: #1111;
+}
+#Timetable, #Timetable thead th, #Timetable tbody th td, #Timetable tfoot th td{
+    overflow-x: auto;
+    word-wrap: break-word;
+    width: 60%;
+    height: auto;
+}
+
+#meetTheTeam{
+    text-align: center;
+    color: white;
+    font-size:250%;
+    border-radius:15% 15% 15% 15%;
+    margin-bottom: 15vh;
+
+
+}
+#AboutUs{
+    color: snow;
+    font-size: 450%;
+    padding-bottom:5%;
+}
+#innovative{
+    font-weight: bold; 
+    font-style: italic
+}
+#description{
+    font-size: 1em;
+}
+#teamName{
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    color: orange;
+}
+
+
+/************************************************************APPLY PAGE***********************************************************/
+.main {
+    color:#fff;
+    background: url(../styles/images/DataBaseBck.jpg)no-repeat center fixed;
+    background-size:cover;
+
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    text-align:center ;
+
+}
+
+.ETxt {
+    margin-top:10vh;
+    margin-bottom:10vh;
+    margin-left:25vw;
+    margin-right:25vw;
+    width:50vw;
+
+    font-size: calc(1vh + 1vw);
+
+    animation: fadeAnimation ease 1.5s;
+    animation-iteration-count: 1;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    border-radius:15% 15% 15% 15%
+
+}
+.button5 {
+    float:left;
+    clear:both;
+}
+
+
+.UserDetails, .Gender, .PersonalDetails, .SkillsList  {
+    background-color: rgba(0, 0, 0, 0.9);
+
+    width: 28vw;
+    border-style: solid none none none;
+
+    font-size:80%;
+
+    line-height: 5vh;
+    animation: fadeAnimation ease 1.5s;
+    animation-iteration-count: 1;
+
+    border-radius: 5% 5% 5% 5%;
+    padding-bottom:2vh;
+}
+
+
+.UserDetails legend, .Gender legend, .PersonalDetails legend, .SkillsList legend{
+    padding-left:1vh;
+    padding-right:1vh;
+    background:black;
+    border-color:white;
+    border-style:solid;
+    border-width: 0.05vw;
+    margin-bottom:1vh;
+}
+
+.Skillslist {
+    margin-bottom:50%
+}
+
+.Gender {
+    border-radius: 10% 10% 10% 10%;
+}
+
+.srbuttons{
+    margin:2vh;
+    margin-bottom:7vh;
+}
+
+.srbuttons .reset {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: 600;
+    line-height: 1vw;
+      
+    padding: 2.5vh 2vw;
+    text-align: center;
+    
+    margin: 1vw;
+  
+    background-color: black;
+    background-position: 0 0;
+    color: white;
+    
+}
+.srbuttons .submit {
+    background: #0088a9;
+    border: 1px solid #0088a9;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 105%;
+    font-weight: 600;
+    line-height: 1vw;
+    
+    padding: 2.5vh 2vw;
+    text-align: center;
+  
+    margin: 2vw 0vw 0vw 0vw;
+}
+
+.reset:hover,
+.reset:active {
+    transition: 0.2s ease-in 0s;
+
+    background-position: 0 0;
+    color: rgb(0, 0, 0);
+
+    background-color:white;
+}  
+
+.submit:hover,
+.submit:active {
+    transition: 0.3s ease-in 0s;
+    background-color: initial;
+
+    color: #0088a9;
+}
+
+.NPButton {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 120%;
+    font-weight: 600;
+    line-height: 1vw;
+      
+    padding: 2.5vh 2vw;
+    text-align: center;
+    
+    margin: 1vw;
+  
+    background-color: initial;
+    background-position: 0 0;
+    color: white;
+  }
+
+.NPButton:hover,
+.NPButton:active {
+      transition: 0.2s ease-in 0s;
+      background-color: initial;
+      background-position: 0 0;
+      color: rgb(0, 0, 0);
+      background-color:white;
+  }
+
+
+textarea {
+    background-color: initial;
+    color: white;
+
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:5px;
+    border-radius: 25px;
+    margin:3vh;
+}
+
+input[type=text]{
+    background-color: initial;
+    color: white;
+
+    width:10vw;
+    height:3vh;
+    text-align:center;
+    border-radius: 25px;
+}
+select[name=state]{
+    background-color: initial;
+    color: white;
+    width:10vw;
+    height:3vh;
+    text-align:center;
+    border-radius: 25px;
+}
+option{
+    background-color: black;
+    color: white;
+
+    width:10vw;
+    height:3vh;
+    text-align:center;
+    border-radius: 25px;
+}  
+input[type=tel]{
+    background-color: initial;
+    color: white;
+
+    width:10vw;
+    height:3vh;
+    text-align:center;
+    border-radius: 25px;
+}
+input[type=date]{
+    background-color: initial;
+    color: gray;
+    border-radius: 5%;
+    width:10vw;
+    height:3vh;
+    text-align:center;
+    color-scheme: dark;
+    border-radius: 25px;
+}
+
+
+.Jobswrapper {
+    background: url(../styles/images/DataBaseBck.jpg)no-repeat center center fixed;
+    background-size:cover;
+    background-attachment:fixed; 
+    
+}
+
+
+main {
+  opacity: 0;
+  animation-name: fadeAnimation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+
+}
+.Jobswrapper h1{
+    color:white;
+    animation: fadeAnimation ease 1.5s;
+    animation-iteration-count: 1;
+
+    margin-top:10vh;
+    margin-bottom:10vh;
+    margin-left:25vw;
+    margin-right:25vw;
+    width:50vw;
+  
+    background-color: rgba(0, 0, 0, 0.9);
+  
+    border-radius:15% 15% 15% 15%
+}
+main aside{
+  margin: 3vh 5vh 10vh 5vh;
+     
+  width: 25%;
+  height: 25%;
+  justify-content:right;
+  border-radius: 5px;
+  border: solid;
+  padding:0 2vh 0 2vh;
+     
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
+
+  float:right;
+}
+.a1{
+  margin-bottom: 30rem;
+}
+
+.job-descriptions {
+    font: normal bold 380%/15vh Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin-bottom: 2vh;
+    padding: 2vw;
+    margin-top: 6vh;
+}
+
+.D-f {
+  font: normal bold 2vh/4vh Arial, Helvetica, sans-serif;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  text-align: center ;
+}
+
+main h3 {
+  font:280vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main h4{
+  font: lighter;
+}
+
+main p {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  line-height: 1.5;
+}
+    
+main button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding:0.3vw;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+    
+main button:hover {
+  background-color: #555;
+  color: #ff0000;
+}
+  
+    
+main ol {
+  margin-left: 0.8vw;
+}
+    
+main ul {
+  margin-left: 0.8vw;
+}
+    
+main li {
+margin-bottom: 2vw;
+}
+
+.EnhancePageimg{
+    width:35vw;
+    height:35vh;
+}
+
+main hr {
+  height: 2px;
+  background-color: red;
+  border-style: solid;
+  border-width: 0;
+  margin: 20px ;
+}
+/*-------------------------------------------Login Page--------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+}
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+
+    background: url(../styles/images/wallpaperflare.com_wallpaper.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 50px;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+.Log-inbutton{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+
+html #manageMain {
+    color: black !important;
+}
+
+.php h1 {
+    text-align: center;
+    margin-top: 3em;
+}
+.php p {
+    margin-left: 8em;
+    font-weight: 0.5em;
+}
+.php .end {
+    margin-bottom: 10em;
+}
+
+
